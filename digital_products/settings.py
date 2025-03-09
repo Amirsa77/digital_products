@@ -28,10 +28,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'products',
     'rest_framework',
     'rest_framework_simplejwt',
+    'import_export',
     'users',
+    'products',
+    'subscriptions',
+    'payments',
 ]
 
 MIDDLEWARE = [
@@ -101,6 +104,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = 'static/'
+STATIC_ROOT = 'static'
 
 # media files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
